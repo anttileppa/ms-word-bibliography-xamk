@@ -325,7 +325,7 @@
         <separator_between_if_two> &amp; </separator_between_if_two>
         <separator_between_if_more_than_two>, </separator_between_if_more_than_two>
         <separator_before_last> &amp; </separator_before_last>
-        <max_number_of_persons_to_display>4</max_number_of_persons_to_display>
+        <max_number_of_persons_to_display>10</max_number_of_persons_to_display>
         <number_of_persons_to_display_if_more_than_max>1</number_of_persons_to_display_if_more_than_max>
         <overflow> ym.</overflow>
         <single_suffix></single_suffix>
@@ -340,7 +340,7 @@
         <separator_between_if_two> &amp; </separator_between_if_two>
         <separator_between_if_more_than_two>, </separator_between_if_more_than_two>
         <separator_before_last> &amp; </separator_before_last>
-        <max_number_of_persons_to_display>4</max_number_of_persons_to_display>
+        <max_number_of_persons_to_display>10</max_number_of_persons_to_display>
         <number_of_persons_to_display_if_more_than_max>1</number_of_persons_to_display_if_more_than_max>
         <overflow> ym.</overflow>
         <single_suffix>, ed.</single_suffix>
@@ -355,7 +355,7 @@
         <separator_between_if_two> &amp; </separator_between_if_two>
         <separator_between_if_more_than_two>, </separator_between_if_more_than_two>
         <separator_before_last> &amp; </separator_before_last>
-        <max_number_of_persons_to_display>4</max_number_of_persons_to_display>
+        <max_number_of_persons_to_display>10</max_number_of_persons_to_display>
         <number_of_persons_to_display_if_more_than_max>1</number_of_persons_to_display_if_more_than_max>
         <overflow> ym.</overflow>
         <single_suffix></single_suffix>
@@ -370,7 +370,7 @@
         <separator_between_if_two> &amp; </separator_between_if_two>
         <separator_between_if_more_than_two>, </separator_between_if_more_than_two>
         <separator_before_last> &amp; </separator_before_last>
-        <max_number_of_persons_to_display>4</max_number_of_persons_to_display>
+        <max_number_of_persons_to_display>10</max_number_of_persons_to_display>
         <number_of_persons_to_display_if_more_than_max>1</number_of_persons_to_display_if_more_than_max>
         <overflow> ym.</overflow>
         <single_suffix></single_suffix>
@@ -385,7 +385,7 @@
         <separator_between_if_two> &amp; </separator_between_if_two>
         <separator_between_if_more_than_two>, </separator_between_if_more_than_two>
         <separator_before_last> &amp; </separator_before_last>
-        <max_number_of_persons_to_display>4</max_number_of_persons_to_display>
+        <max_number_of_persons_to_display>10</max_number_of_persons_to_display>
         <number_of_persons_to_display_if_more_than_max>1</number_of_persons_to_display_if_more_than_max>
         <overflow> ym.</overflow>
         <single_suffix>, ed.</single_suffix>
