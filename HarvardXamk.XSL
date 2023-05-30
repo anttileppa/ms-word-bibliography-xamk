@@ -125,15 +125,31 @@
         <b:ImportantField>b:Volume</b:ImportantField>
         <b:ImportantField>b:Issue</b:ImportantField>
         <b:ImportantField>b:Pages</b:ImportantField>
+        <b:ImportantField>b:DayAccessed</b:ImportantField>
+        <b:ImportantField>b:MonthAccessed</b:ImportantField>
+        <b:ImportantField>b:YearAccessed</b:ImportantField>
       </source>
       <source type="Report">
         <b:ImportantField>b:Author/b:Author/b:NameList</b:ImportantField>
         <b:ImportantField>b:Year</b:ImportantField>
         <b:ImportantField>b:Title</b:ImportantField>
+        <b:ImportantField>b:Medium</b:ImportantField>
         <b:ImportantField>b:ThesisType</b:ImportantField>
         <b:ImportantField>b:City</b:ImportantField>
         <b:ImportantField>b:Publisher</b:ImportantField>
         <b:ImportantField>b:Institution</b:ImportantField>
+        <b:ImportantField>b:Department</b:ImportantField>
+        <b:ImportantField>b:DayAccessed</b:ImportantField>
+        <b:ImportantField>b:MonthAccessed</b:ImportantField>
+        <b:ImportantField>b:YearAccessed</b:ImportantField>
+        <b:ImportantField>b:URL</b:ImportantField>
+      </source>
+      <source type="Case">
+        <b:ImportantField>b:Title</b:ImportantField>
+        <b:ImportantField>b:Year</b:ImportantField>
+        <b:ImportantField>b:Month</b:ImportantField>
+        <b:ImportantField>b:Day</b:ImportantField>
+        <b:ImportantField>b:CaseNumber</b:ImportantField>
       </source>
     </importantfields>
     <citation>
@@ -175,6 +191,9 @@
       </source>
       <source type="Report">
         <format>{%CitationPrefix%}{%Author:1|"Anon."%}{ %Year|"n.d."%}{%YearSuffix%}{, %CitationPages::%}{%CitationSuffix%}{.}</format>
+      </source>
+      <source type="Case">
+        <format>{%Title%} {%Day%}.{%Month%}.{%Year%}/{%CaseNumber%}</format>
       </source>
     </citation>
     <bibliography>
@@ -270,7 +289,7 @@
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2|"Anon."%,}{ %Year|"n.d."%{%YearSuffix%}.}{ %Title|ShortTitle%.}{ &lt;i&gt;%JournalName%&lt;/i&gt;,}{ [%Medium%].{{%Day%} %Month:s%,}}{ %Volume%{(%Issue%)},}{ (%Issue%),}{ %Pages:p.:pp.:a2%.}{. %Comments%.}{ Available at: &lt;u&gt;%URL:l%&lt;/u&gt;}{ [Accessed{{ %DayAccessed%} %MonthAccessed:s%} %YearAccessed%]}.{ %Comments%.}</format>
+          <format>{%Author:2|"Anon."%,}{ %Year|"n.d."%{%YearSuffix%}.}{ %Title|ShortTitle%.}{ &lt;i&gt;%JournalName%&lt;/i&gt;,}{ %Medium%.{{%Day%} %Month:s%,}}{ %Volume%{(%Issue%)},}{ (%Issue%),}{ %Pages%.}{. %Comments%.}{ Saatavissa: &lt;u&gt;%URL:l%&lt;/u&gt;}{ [Viitattu{{ %DayAccessed%}.%MonthAccessed:s%}.%YearAccessed%]}.{ %Comments%.}</format>
         </column>
         <sortkey>{%Author:0|"Anon."%}{%Year|"n.d."%}{%Title:a|ShortTitle:a%}</sortkey>
       </source>
@@ -280,9 +299,17 @@
         <column id="1">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2|"Anon."%,}{ %Year|"n.d."%{%YearSuffix%}.}{ %StandardNumber%}{ &lt;i&gt;%Title|ShortTitle%&lt;/i&gt;.}{ %ThesisType%.}{ %City|CountryRegion%{, %CountryRegion%}{: %Publisher|Institution%}}{ %Publisher|Institution%}.{ %Comments%.}</format>
+          <format>{%Author:2|"Anon."%,}{ %Year|"n.d."%{%YearSuffix%}.}{ %StandardNumber%}{ %Title|ShortTitle%.}{ %ThesisType%.}{ %City|CountryRegion%{, %CountryRegion%}{: %Publisher|Institution%}}{ %Publisher|Institution%}{ Saatavissa: &lt;u&gt;%URL:l%&lt;/u&gt;}{ [Viitattu{{ %DayAccessed%}.%MonthAccessed:s%}.%YearAccessed%]}.{ %Comments%.}</format>
         </column>
         <sortkey>{%Author:0|"Anon."%}{%Year|"n.d."%}{%Title:a|ShortTitle:a%}</sortkey>
+      </source>
+      <source type="Case">
+        <column id="1">
+          <halign>left</halign>
+          <valign>top</valign>
+          <format>{%Title%} {%Day%}.{%Month%}.{%Year%}/{%CaseNumber%}</format>
+        </column>
+        <sortkey>{%Title:a|Year:a%}</sortkey>
       </source>
     </bibliography>
     <namelists>
